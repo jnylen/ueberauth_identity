@@ -16,7 +16,8 @@ defmodule Ueberauth.Strategy.Identity do
     password_field: :password,
     password_confirmation_field: :password_confirmation,
     param_nesting: nil,
-    scrub_params: true
+    scrub_params: true,
+    ignores_csrf_attack: true
 
   alias Ueberauth.Auth.Info
   alias Ueberauth.Auth.Credentials
